@@ -3,5 +3,12 @@
 	src: url(../fuentes/DancingScript.otf);
 }
 body{
-
+	background-color: #02010a;
+}
+header{
+	background-color: #5b7989;
+	font-family: DancingScript;
+	text-align: left;
+	color:white;
+	border-radius: 10px;
 }
