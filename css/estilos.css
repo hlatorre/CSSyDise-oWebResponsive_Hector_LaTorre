@@ -1,14 +1,190 @@
-@font-face {
-	font-family: DancingScript;
-	src: url(../fuentes/DancingScript.otf);
-}
 body{
+	margin-top: 0;
 	background-color: #02010a;
+	font-family: 'Dancing Script', cursive;
+	color: #fff;
+	animation: myanimation 1s;
+}
+@-webkit-keyframes myanimation{
+	from
+	{
+		margin-top:150%;
+	}
+	to
+	{
+		margin-top:-5%;
+		}
 }
 header{
-	background-color: #5b7989;
-	font-family: DancingScript;
-	text-align: left;
-	color:white;
-	border-radius: 10px;
+	background-color:#5b7989;
+	color:#ffffff;
+	text-shadow:2px 2px 2px #02010a;
+	border-radius:10px 10px 0 0;
+	height:130px;
+	-webkit-animation: slide 0.5s forwards;
+  -webkit-animation-delay: 2s;
+  animation: slide 0.5s forwards;
+	animation-delay: 2s;
+	max-width:900px;
+	margin:0 auto;
+}
+header h1{
+	padding-left: 10px;
+}
+#cabecera
+{
+	display:flex;
+	flex-direction: column;
+}
+#menu
+{
+	text-shadow:none;
+	text-align:right;
+}
+#menu a
+{
+	color:#ffffff;
+	padding-right:15px;
+}
+
+#menu a:hover,
+#menu a:active
+{
+	text-decoration:none;
+}
+#contenido {
+	display: flex;
+	flex-direction: column;
+	max-width:900px;
+	margin:0 auto;
+	background-color:#82c3a6;
+}
+#imagenPrincipal>div
+{
+	margin:0 auto;
+	width:90%;
+}
+#imagenPrincipal >div>img
+{
+	width:100%;
+}#imagenSecundaria
+{
+	background-color:#d5c75f ;
+	border:solid 1px #552B00;
+}
+#imagenSecundaria .contenedor {
+	display: flex;
+	flex-direction: row;
+}
+.contenedor4 {
+	display: flex;
+	flex-direction: row;
+	margin:10px 0;
+}
+.contenedor4>div {
+	width:33%;
+}
+.contenedor4>div>img {
+	width:95%;
+	border:solid 2px #444;
+	margin:5px 0 0 5px;
+}
+#pie
+{
+	height:250px;
+	background-color:#C6d5c5;
+	border-radius:0 0 10px 10px;
+	color:#000;
+	max-width:900px;
+	margin:0 auto;
+}
+#pie .contenedorPie
+{
+	display: flex;
+	flex-direction: row;
+}
+#pie .contenedorPie>div
+{
+	width:25%;
+	text-align:center;
+}
+@media (max-width:600px)
+{
+	#contenido {
+		width:100%;
+	}
+	#menu
+	{
+		text-shadow:none;
+		text-align:center;
+	}
+
+	#imagenSecundaria .contenedor {
+	display: flex;
+	flex-direction: column;
+	}
+
+	#imagenSecundaria .contenedor >div
+	{
+		min-width:90%;
+		margin:0 auto;
+	}
+	#pie
+	{
+		height:500px;
+	}
+	#pie .contenedorPie {
+		display: flex;
+		flex-direction: column;
+	}
+	#pie .contenedorPie>div
+	{
+		width:100%;
+		text-align:center;
+	}
+	.contenedor4 {
+		display: flex;
+		flex-direction: column;
+		margin:10px 0;
+	}
+	.contenedor4>div {
+		width:100%;
+	}
+
+}
+@media (max-width:900px)
+{
+	#imagenSecundaria .contenedor>div
+	{
+		width:44%;
+		margin:10px auto;
+	}
+}
+#imagenSecundaria .contenedor>div
+{
+	width:44%;
+	margin:10px auto;
+}
+
+#imagenSecundaria .contenedor>div>a>img
+{
+	width:100%;
+	margin:10px auto;
+}
+
+#imgIzquierda a>img:hover
+{
+	-ms-transform: rotate(10deg);
+	-webkit-transform: rotate(10deg);
+	transform: rotate(10deg);
+	box-shadow:2px 2px 2px #82c3a6;
+	border:solid 2px #000;
+}
+#imgDerecha a>img:hover
+{
+	-ms-transform: translate(5px, -20px);
+	-webkit-transform: translate(5px, -20px);
+	transform: translate(20px, -5px);
+	box-shadow:2px 2px 2px #82c3a6;
+	border:solid 2px #000;
 }
