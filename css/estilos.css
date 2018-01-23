@@ -110,47 +110,46 @@ header h1{
 }
 @media (max-width:600px)
 {
-	#contenido {
-		width:100%;
-	}
-	#menu
-	{
-		text-shadow:none;
-		text-align:center;
-	}
+		#contenido {
+			width:100%;
+		}
+		#menu
+		{
+			text-shadow:none;
+			text-align:center;
+		}
 
-	#imagenSecundaria .contenedor {
-	display: flex;
-	flex-direction: column;
-	}
-
-	#imagenSecundaria .contenedor >div
-	{
-		min-width:90%;
-		margin:0 auto;
-	}
-	#pie
-	{
-		height:500px;
-	}
-	#pie .contenedorPie {
+		#imagenSecundaria .contenedor {
 		display: flex;
 		flex-direction: column;
-	}
-	#pie .contenedorPie>div
-	{
-		width:100%;
-		text-align:center;
-	}
-	.contenedor4 {
-		display: flex;
-		flex-direction: column;
-		margin:10px 0;
-	}
-	.contenedor4>div {
-		width:100%;
-	}
+		}
 
+		#imagenSecundaria .contenedor >div
+		{
+			min-width:90%;
+			margin:0 auto;
+		}
+		#pie
+		{
+			height:500px;
+		}
+		#pie .contenedorPie {
+			display: flex;
+			flex-direction: column;
+		}
+		#pie .contenedorPie>div
+		{
+			width:100%;
+			text-align:center;
+		}
+		.contenedor4 {
+			display: flex;
+			flex-direction: column;
+			margin:10px 0;
+		}
+		.contenedor4>div {
+			width:100%;
+		}
 }
 @media (max-width:900px)
 {
